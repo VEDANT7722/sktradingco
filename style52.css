@@ -190,3 +190,70 @@ footer {
 #io{
 display:inline
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #eee;
+    border-radius: 5px;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-item {
+    width: 90%;
+  }
+
+  form#contact-form {
+    padding: 0 10px;
+  }
+
+  .logo-img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .logo h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-item h3 {
+    font-size: 1rem;
+  }
+
+  form#contact-form input,
+  form#contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  form#contact-form button {
+    font-size: 0.95rem;
+  }
+}
